@@ -1,9 +1,9 @@
 ---
-name: gpt-imagegen
-description: Buat atau sunting ilustrasi raster dengan imagegen GPT lewat Codex CLI yang login memakai langganan ChatGPT, tanpa API key. Pakai saat pengguna meminta gambar, ilustrasi, atau infografis bergambar dibuat dengan "imagegen GPT", "gambar dari GPT", "Codex imagegen", atau "/gpt-imagegen", terutama dari Claude Code. Skill menulis brief, menjalankan codex exec dengan gambar rujukan gaya, memeriksa hasil secara visual, lalu menyimpan PNG asli, WebP opsional, dan arsip brief. Jangan dipakai untuk diagram yang lebih tepat dibuat sebagai SVG, HTML, atau kode.
+name: claude-imagegen
+description: Buat atau sunting ilustrasi raster dengan imagegen GPT lewat Codex CLI yang login memakai langganan ChatGPT, tanpa API key. Pakai saat pengguna meminta gambar, ilustrasi, atau infografis bergambar dibuat dengan "imagegen GPT", "gambar dari GPT", "Codex imagegen", atau "/claude-imagegen", terutama dari Claude Code. Skill menulis brief, menjalankan codex exec dengan gambar rujukan gaya, memeriksa hasil secara visual, lalu menyimpan PNG asli, WebP opsional, dan arsip brief. Jangan dipakai untuk diagram yang lebih tepat dibuat sebagai SVG, HTML, atau kode.
 ---
 
-# gpt-imagegen
+# claude-imagegen
 
 Skill ini menjembatani agent ke alat `image_gen` bawaan Codex. Alat itu memakai login ChatGPT pengguna, jadi tidak perlu `OPENAI_API_KEY`.
 

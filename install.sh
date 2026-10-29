@@ -2,11 +2,11 @@
 set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-skill_dir="$repo_dir/skills/gpt-imagegen"
+skill_dir="$repo_dir/skills/claude-imagegen"
 
 for target_dir in "$HOME/.claude/skills" "$HOME/.agents/skills"; do
   mkdir -p "$target_dir"
-  target="$target_dir/gpt-imagegen"
+  target="$target_dir/claude-imagegen"
   if [[ -e "$target" || -L "$target" ]]; then
     if [[ -L "$target" && "$(readlink "$target")" == "$skill_dir" ]]; then
       printf 'Sudah terpasang: %s\n' "$target"

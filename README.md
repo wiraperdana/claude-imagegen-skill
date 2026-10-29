@@ -18,22 +18,22 @@ cd claude-imagegen-skill
 ./install.sh
 ```
 
-`install.sh` membuat symlink `~/.claude/skills/gpt-imagegen` dan `~/.agents/skills/gpt-imagegen`. Perubahan di repo langsung terbaca kedua harness. Untuk melepas, hapus kedua symlink itu.
+`install.sh` membuat symlink `~/.claude/skills/claude-imagegen` dan `~/.agents/skills/claude-imagegen`. Perubahan di repo langsung terbaca kedua harness. Untuk melepas, hapus kedua symlink itu.
 
-Nama skillnya `gpt-imagegen`, bukan `imagegen`, karena Codex sudah punya skill sistem bernama `imagegen`.
+Nama skillnya `claude-imagegen`, mengikuti nama repo. Nama `imagegen` saja tidak dipakai karena Codex sudah punya skill sistem bernama `imagegen`.
 
 ## Pakai
 
-Di Claude Code: `/gpt-imagegen <apa yang ingin digambar>`.
+Di Claude Code: `/claude-imagegen <apa yang ingin digambar>`.
 
 Langsung dari terminal:
 
 ```bash
-skills/gpt-imagegen/scripts/gen.sh --out art/pushpull.png --brief brief.txt --ref style.png --webp 1400
-skills/gpt-imagegen/scripts/gen.sh --out art/test.png --brief brief.txt --dry-run   # lihat perintah tanpa memakai kuota
+skills/claude-imagegen/scripts/gen.sh --out art/pushpull.png --brief brief.txt --ref style.png --webp 1400
+skills/claude-imagegen/scripts/gen.sh --out art/test.png --brief brief.txt --dry-run   # lihat perintah tanpa memakai kuota
 ```
 
-Template brief dan contoh yang sudah teruji ada di `skills/gpt-imagegen/references/brief-template.md`.
+Template brief dan contoh yang sudah teruji ada di `skills/claude-imagegen/references/brief-template.md`.
 
 ## Perlu diketahui
 
