@@ -58,7 +58,7 @@ fi
 
 mkdir -p "$(dirname "$out")"
 cp "$result" "$out"
-cp "$brief" "${out%.png}.brief.txt"
+[ "$brief" -ef "${out%.png}.brief.txt" ] || cp "$brief" "${out%.png}.brief.txt"  # brief yang sudah di tempat arsipnya tidak disalin ulang
 if [[ -n "$webp" ]]; then
   cwebp -quiet -q 78 -resize "$webp" 0 "$out" -o "${out%.png}.webp"
 fi
